@@ -10,10 +10,6 @@ import {
 } from "framer-motion";
 import {
   Mail,
-  // Github, 
-  // Linkedin,
-  MapPin,
-  ExternalLink,
   Sparkles,
   BarChart3,
   Database,
