@@ -22,53 +22,210 @@ import {
 } from "lucide-react";
 
 // DATA
+// const projects = [
+//   {
+//     title: "Conversational AI for Transit Analytics",
+//     subtitle: "LLM-powered analytics assistant",
+//     description:
+//       "A capstone project focused on turning complex transit analysis into a more intuitive workflow by combining natural language interaction, analytical tooling, and visual outputs.",
+//     impact: [
+//       "Reduced manual analysis effort",
+//       "Connected LLM-driven querying with analytics tasks",
+//       "Built for real-world transit planning use cases",
+//     ],
+//     stack: ["Python", "LLMs", "Streamlit", "Data Analysis", "Visualization"],
+//     href: "https://github.com/ARena18/DS_Capstone_Team2.git",
+//     video: "/conversational_ai_demo.mp4",
+//     accent: "from-emerald-200 via-green-100 to-teal-50",
+//   },
+//   {
+//     title: "Best Place to Live",
+//     subtitle: "Geospatial neighborhood scoring platform",
+//     description:
+//       "An end-to-end analytics project that ranks Seattle neighborhoods by combining housing affordability, transit access, and local amenities into one interactive decision-making experience.",
+//     impact: [
+//       "Scored 94 Seattle neighborhoods",
+//       "Combined housing, GTFS transit, and amenity data",
+//       "Built an interactive map-based frontend for exploration",
+//     ],
+//     stack: ["Python", "GeoPandas", "React", "Vite", "Leaflet", "HTML"],
+//     href: "https://github.com/Quyenn24/best-place-to-live.git",
+//     live: "https://best-place-to-live-xi.vercel.app",
+//     accent: "from-teal-200 via-cyan-100 to-white",
+//     image: "/best-place-to-live.png"
+//   },
+//   {
+//     title: "Link Ridership Performance",
+//     subtitle: "Transit analytics with business impact",
+//     description:
+//       "A polished ridership analytics dashboard built from raw ridership and demand data to help planners understand over-time trends, station performance, and daily ridership behavior.",
+//     impact: [
+//       "Analyzed 64M+ total ridership records",
+//       "Tracked line contribution, station trends, and MoM changes",
+//       "Designed for operational monitoring and planning decisions",
+//     ],
+//     stack: ["Power BI", "Python", "SQL", "EDA", "Dashboard Design"],
+//     href: null,
+//     accent: "from-green-200 via-emerald-100 to-white",
+//     image: "/ridership-dashboard.png",
+//   },
+// ];
+
 const projects = [
   {
-    title: "Conversational AI for Transit Analytics",
-    subtitle: "LLM-powered analytics assistant",
+    title: "AI-Powered Analytics Tool",
+    subtitle: "LLM-powered transit analytics assistant",
     description:
-      "A capstone project focused on turning complex transit analysis into a more intuitive workflow by combining natural language interaction, analytical tooling, and visual outputs.",
-    impact: [
-      "Reduced manual analysis effort",
-      "Connected LLM-driven querying with analytics tasks",
-      "Built for real-world transit planning use cases",
+      "A capstone project for King County Metro that turns natural language questions into structured analytical outputs for transit planning use cases.",
+
+    problem:
+      "Transit planners needed faster access to complex service and performance insights without relying on repeated manual analysis or technical intermediaries.",
+
+    role:
+      "I worked across product discovery, analytics design, and technical implementation.",
+
+    built: [
+      "Built a Streamlit-based natural language query interface.",
+      "Designed LLM-powered tool-calling workflows using Ollama.",
+      "Connected user questions to structured analytical tools and transit datasets.",
+      "Formatted outputs for planner-friendly interpretation and decision support."
     ],
-    stack: ["Python", "LLMs", "Streamlit", "Data Analysis", "Visualization"],
+
+    technicalScope: [
+      "Python",
+      "Streamlit",
+      "Ollama",
+      "LLM Tool Calling",
+      "Transit Data",
+      "Data Validation"
+    ],
+
+    productScope: [
+      "Stakeholder Requirements",
+      "Feature Prioritization",
+      "Planner Use Cases",
+      "Self-Service Analytics",
+      "Usability"
+    ],
+
+    impact:
+      "Formally adopted by King County Metro, reducing manual analysis time by 35% and expanding self-service data access for non-technical stakeholders.",
+
+    relevance: [
+      "Data Scientist",
+      "Product Analyst",
+      "AI Engineer",
+      "Data Analyst"
+    ],
+
     href: "https://github.com/ARena18/DS_Capstone_Team2.git",
     video: "/conversational_ai_demo.mp4",
-    accent: "from-emerald-200 via-green-100 to-teal-50",
+    accent: "from-emerald-200 via-green-100 to-teal-50"
   },
+
   {
     title: "Best Place to Live",
-    subtitle: "Geospatial neighborhood scoring platform",
+    subtitle: "Seattle neighborhood scoring platform",
     description:
-      "An end-to-end analytics project that ranks Seattle neighborhoods by combining housing affordability, transit access, and local amenities into one interactive decision-making experience.",
-    impact: [
-      "Scored 94 Seattle neighborhoods",
-      "Combined housing, GTFS transit, and amenity data",
-      "Built an interactive map-based frontend for exploration",
+      "An end-to-end geospatial analytics project that ranks neighborhoods using housing affordability, transit access, and nearby amenities.",
+
+    problem:
+      "People compare neighborhoods using fragmented information across housing, transit, and amenity sources. This project brings those factors into one interactive decision-support tool.",
+
+    role:
+      "I designed the data pipeline, scoring model, geospatial processing workflow, and interactive map-based frontend.",
+
+    built: [
+      "Processed neighborhood boundaries, housing data, GTFS transit data, and amenity data.",
+      "Created a weighted scoring model to compare neighborhood livability.",
+      "Built a React, Vite, and Leaflet frontend for interactive map exploration.",
+      "Deployed the project as a live web app using Vercel."
     ],
-    stack: ["Python", "GeoPandas", "React", "Vite", "Leaflet", "HTML"],
+
+    technicalScope: [
+      "Python",
+      "GeoPandas",
+      "GTFS",
+      "Foursquare API",
+      "React",
+      "Vite",
+      "Leaflet",
+      "Vercel"
+    ],
+
+    productScope: [
+      "User Decision Criteria",
+      "Weighted Scoring",
+      "Tradeoff Design",
+      "Map UX",
+      "Data Storytelling"
+    ],
+
+    impact:
+      "Created an interactive tool that helps users compare 94 Seattle neighborhoods using transparent, multi-factor scoring.",
+
+    relevance: [
+      "Data Analyst",
+      "Product Analyst",
+      "Frontend Developer",
+      "Data Engineer"
+    ],
+
     href: "https://github.com/Quyenn24/best-place-to-live.git",
     live: "https://best-place-to-live-xi.vercel.app",
     accent: "from-teal-200 via-cyan-100 to-white",
     image: "/best-place-to-live.png"
   },
+
   {
     title: "Link Ridership Performance",
-    subtitle: "Transit analytics with business impact",
+    subtitle: "Transit dashboard for operational insights",
     description:
-      "A polished ridership analytics dashboard built from raw ridership and demand data to help planners understand over-time trends, station performance, and daily ridership behavior.",
-    impact: [
-      "Analyzed 64M+ total ridership records",
-      "Tracked line contribution, station trends, and MoM changes",
-      "Designed for operational monitoring and planning decisions",
+      "A ridership analytics dashboard designed to help planners understand station trends, line contribution, monthly changes, and overall ridership behavior.",
+
+    problem:
+      "Transit stakeholders needed a clearer way to monitor ridership patterns and identify performance changes across stations and time periods.",
+
+    role:
+      "I analyzed ridership data, designed dashboard metrics, and created visual reporting for planning and operational decision-making.",
+
+    built: [
+      "Analyzed 64M+ ridership records.",
+      "Tracked ridership trends, station-level performance, and month-over-month changes.",
+      "Designed dashboard views for operational monitoring.",
+      "Used visual storytelling to make ridership patterns easier to interpret."
     ],
-    stack: ["Power BI", "Python", "SQL", "EDA", "Dashboard Design"],
+
+    technicalScope: [
+      "Power BI",
+      "Python",
+      "SQL",
+      "EDA",
+      "Dashboard Design",
+      "KPI Reporting"
+    ],
+
+    productScope: [
+      "Operational Metrics",
+      "Stakeholder Reporting",
+      "Decision Support",
+      "Dashboard UX"
+    ],
+
+    impact:
+      "Helped translate large ridership datasets into actionable insights for planning, monitoring, and service performance analysis.",
+
+    relevance: [
+      "Data Analyst",
+      "BI Analyst",
+      "Product Analyst",
+      "Transit Analyst"
+    ],
+
     href: null,
     accent: "from-green-200 via-emerald-100 to-white",
-    image: "/ridership-dashboard.png",
-  },
+    image: "/ridership-dashboard.png"
+  }
 ];
 
 const experiences = [
@@ -76,49 +233,187 @@ const experiences = [
     role: "Teaching Assistant",
     company: "Seattle University",
     period: "March 2026 – Present",
-    bullets: [
-      "Guided 25+ graduate students in Machine Learning core concepts including regression, classification, clustering, and model evaluation",
-      "Held weekly office hours and provided individualized feedback on Python-based assignments and end-to-end ML pipeline projects",
+    description:
+    "I support graduate students in understanding Machine Learning concepts and Python-based workflows to real analytical problems.",
+
+    work: [
+      "Led weekly office hours for a 100-student graduate Machine Learning course.",
+      "Explained supervised learning, feature engineering, cross-validation, and model evaluation concepts to 30+ students per session.",
+      "Mentored students on Python-based ML projects covering data preprocessing, feature engineering, cross-validation, and model evaluation using Python, pandas, NumPy, and scikit-learn.",
     ],
+
+    impact:
+      "Improved student learning support and earned 4.9/5.0 mid-quarter feedback by making complex machine learning concepts more practical and approachable.",
+
+    relevance: [
+      "Data Scientist",
+      "Machine Learning Analyst",
+      "Data Analyst",
+      "Technical Mentor",
+    ]
   },
   {
     role: "Graduate Data Science Intern",
     company: "King County Metro",
     period: "Jun 2025 – Present",
-    bullets: [
-      "Owned the full analytics lifecycle for Link ridership, from data cleaning and feature engineering to dashboard and insights delivery.",
-      "Built reusable Python ETL pipelines for geospatial and community asset data with validation workflows in Databricks.",
-      "Delivered insights and decision-support tools used by planners for service planning and operational analysis.",
+    description:
+    "I support data-driven transit planning by analyzing ridership, GTFS, service performance, and geospatial datasets to help planners make better decisions.",
+
+    work: [
+      "Conducted exploratory and statistical analysis on GTFS and APC data to identify high-demand corridors and travel patterns for FIFA World Cup 2026 planning.",
+      "Built Python and Databricks ETL pipelines to ingest, clean, and transform geospatial API data.",
+      "Developed predictive models using regression and time-series methods across 140+ corridors.",
+      "Led discovery session with stakeholders to identify requirements and product scope, evaluate feature options for an internal AI-powered analytics tool."
     ],
+
+    impact:
+      "Influenced $13M in reliability investment decisions, improved recurring data workflows, and helped improve access to planning insights for technical and non-technical stakeholders.",
+
+    relevance: [
+      "Data Analyst",
+      "Data Scientist",
+      "Product Analyst",
+      "Data Engineer"
+    ]
   },
   {
     role: "Project Management Assistant",
     company: "Seattle University",
     period: "Nov 2024 – Present",
-    bullets: [
-      "Built and maintained Power BI dashboards to analyze campus hardware and software usage patterns.",
-      "Automated recurring documentation workflows using Power Automate, reducing manual effort and improving consistency.",
-      "Supported project delivery with Agile and Waterfall methods while keeping milestones and stakeholders aligned.",
+    description:
+    "I support enterprise system implementation by combining analytics, project coordination, data validation, and automation.",
+
+    work: [
+      "Built and maintained exceultive-facing Power BI dashboards with automated refresh and scheduled reporting for leadership and cross-functional teams.",
+      "Validated 10,000+ employee and student records by reconciling discrepancies between legacy systems and Workday.",
+      "Designed data extraction workflows using open-source LLMs to structure and validate data from 8,000+ I-9 documents.",
+      "Coordinated User Acceptance Testing for 50+ end users, tracked defects in Jira, and translated user feedback into product improvements.",
+      "Developed Power Automate workflows to streamline KPI tracking, project reporting, and stakeholder visibility.",
+      "Supported Agile delivery by managing backlog items, contributing to sprint planning, and coordinating across engineering, HR, and payroll teams.",
+      "Served as student representative on the Workday Steering Committee and provided end-user insights that influenced feature adoption decisions."
     ],
+
+    impact:
+      "Helped maintain 99% data accuracy during migration, improved document processing efficiency by 40%, and increased reporting visibility for leadership and implementation teams.",
+
+    relevance: [
+      "Product Analyst",
+      "Data Analyst",
+      "Business System Analyst",
+      "Technical Project Coordinator"
+    ]
   },
   {
     role: "IT Service Desk Support",
     company: "Seattle University",
     period: "Mar 2021 – Aug 2023",
-    bullets: [
-      "Resolved software, application, and operating system issues across 250 classrooms and support channels.",
-      "Created training materials and onboarding documentation for fellow student employees.",
-      "Supported internal system testing, rollout, and technical documentation for Redhawks Hub - a campus tools.",
+    description:
+    "I provided technical support across campus while contributing to system testing, documentation, troubleshooting, and workflow standardization.",
+
+    work: [
+      "Collaborated with System Engineers to CONDUCT A/B experiemnts on VDI configurations and analyze performance metrics such as login time and latency.",
+      "Created 30+ technical documents, training materials, and configuration guides to standardize internal workflows and improve knowledge sharing.",
+      "Resolved hardware, software, application, and access issues for students, staff, and 250+ classrooms.",
+      "Used Jira ticketing and Azure Active Directory to troubleshoot issues and support access management.",
     ],
+
+    impact:
+      "Improved user support quality, strengthened technical documentation, and contributed to system testing that helped improve user retention by 15%.",
+
+    relevance: [
+      "Software Support",
+      "QA Analyst",
+      "Technical Analyst",
+      "Systems Analyst",
+      "IT Analyst"
+    ]
   },
+  {
+    role: "Finance & Accounting Intern",
+    company: "Truong Minh Hai Ltd",
+    period: "Jul 2019 – Dec 2019",
+
+    description:
+      "I supported financial and operational analysis by working with transaction, inventory, and sales data to identify performance trends and improve reporting accuracy.",
+
+    work: [
+      "Analyzed transaction and inventory data using advanced Excel and SQL within a Warehouse Management System.",
+      "Identified sales trends, margin variance, and inventory movement patterns across all product categories.",
+      "Prepared analytical summaries and presented to leadership to support finance and operations decision-making.",
+      "Helped connect financial performance indicators with inventory and operational data."
+    ],
+
+    impact:
+      "Identified opportunities that helped improve inventory turnover by 10% across all product categories.",
+
+    relevance: [
+      "Data Analyst",
+      "Business Analyst",
+      "Finance Analyst",
+      "Operations Analyst"
+    ]
+  }
 ];
 
 const skills = [
-  "Python", "SQL", "R", "React", "HTML", "TypeScript",
-  "Databricks", "PostgreSQL", "Power BI", "Tableau", "ArcGIS",
-  "ETL Pipelines", "Statistical Modeling", "Predictive Modeling",
-  "Feature Engineering", "API Integration", "Data Reconciliation",
-  "Data Quality Validation",
+  {
+    category: "Programming Language",
+    items: ["Python", "SQL", "R", "TypeScript", "React", "HTML"]
+  },
+  {
+    category: "Analytics & Applied Machine Learning",
+    items: [
+      "EDA",
+      "Statistical Analysis",
+      "Predictive Modeling",
+      "Classification",
+      "Regression",
+      "Time Series",
+      "Feature Engineering",
+      "Model Evaluation",
+      "Cross-validation",
+      "A/B Testing"
+    ]
+  },
+  {
+    category: "BI & Visualization",
+    items: ["Power BI", "Tableau", "ArcGIS", "Advance Excel", "Miscrosoft Suite"]
+  },
+  {
+    category: "Data Engineering & Automation",
+    items: [
+      "ETL/ELT Pipelines",
+      "API Integration",
+      "Databricks",
+      "PostgreSQL",
+      "Power Automate",
+      "Data Validation & Reconciliation",
+      "Data Quality Assurance"
+    ]
+  },
+  {
+    category: "Product & Delivery",
+    items: [
+      "Jira",
+      "Trello",
+      "UAT",
+      "Agile practices",
+      "Waterfall methodology",
+      "Stakeholder Communication",
+      "Backlog Management",
+      "Sprint Planning"
+    ]
+  },
+  {
+    category: "AI Tools",
+    items: [
+      "LLMs",
+      "Open-source LLMs",
+      "Streamlit",
+      "Claude Code",
+      "Automation Workflows"
+    ]
+  }
 ];
 
 const values = [
@@ -389,7 +684,7 @@ export default function App() {
           >
             <div>
               <p className="syne text-base font-bold tracking-tight text-slate-900">Quyen Bui</p>
-              <p className="text-xs text-slate-400">Data Scientist · Analyst · Developer</p>
+              <p className="text-xs text-slate-400">Product Analyst · Data Scientist · Data Engineer · Developer</p>
             </div>
             <nav className="hidden items-center gap-6 text-sm font-medium text-slate-500 md:flex">
               {["projects", "experience", "about", "skills", "contact"].map((id) => (
@@ -438,8 +733,8 @@ export default function App() {
                 transition={{ duration: 0.6, delay: 0.5 }}
                 className="mt-6 max-w-2xl text-lg leading-8 text-slate-500"
               >
-                I work at the intersection of data and software — building systems and tools that make work easier and decisions sharper. 
-                My work spans analytics, software development, and automation — always with an eye toward business impact and user-centered design.
+                I’m a data science and analytics professional with experience across data analysis, product analytics, AI-powered tools, ETL pipelines, dashboards development, and enterprise system implementation.
+                Always with an eye toward business impact and user-centered design.
               </motion.p>
 
               <motion.div
@@ -462,7 +757,7 @@ export default function App() {
                   Contact Me
                 </a>
                 <a
-                  href="/resume.pdf"
+                  href="/resume_QB.pdf"
                   className="inline-flex items-center gap-2 rounded-2xl border-2 border-emerald-200 bg-emerald-50 px-6 py-3 text-sm font-semibold text-emerald-700 transition-all hover:-translate-y-1 hover:bg-emerald-100"
                 >
                   Resume <Download className="h-4 w-4" />
@@ -475,7 +770,7 @@ export default function App() {
                 transition={{ duration: 0.6, delay: 0.8 }}
                 className="mt-10 flex flex-wrap gap-2"
               >
-                {["Python", "SQL", "Power BI", "Geospatial Analytics", "ETL Pipelines", "Data Storytelling"].map((s) => (
+                {["Python", "SQL", "Power BI", "Product Analytics", "ETL Pipelines", "Data Storytelling"].map((s) => (
                   <span key={s} className="rounded-full border border-slate-200 bg-white/80 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm backdrop-blur">
                     {s}
                   </span>
@@ -540,7 +835,7 @@ export default function App() {
                                 <h3 className="syne mt-2 text-2xl font-bold tracking-tight text-white">{project.title}</h3>
                                 <p className="mt-1 text-sm font-medium text-slate-300">{project.subtitle}</p>
                                 <div className="mt-4 flex flex-wrap gap-2">
-                                  {project.stack.map((item) => (
+                                  {project.technicalScope.map((item) => (
                                     <span key={item} className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-medium text-white backdrop-blur">
                                       {item}
                                     </span>
@@ -556,7 +851,7 @@ export default function App() {
                             <h3 className="syne relative mt-3 text-2xl font-bold tracking-tight text-slate-950">{project.title}</h3>
                             <p className="relative mt-2 text-sm font-medium text-slate-500">{project.subtitle}</p>
                             <div className="relative mt-6 flex flex-wrap gap-2">
-                              {project.stack.map((item) => (
+                              {project.technicalScope.map((item) => (
                                 <span key={item} className="rounded-full border border-white/80 bg-white/70 px-3 py-1 text-xs font-medium text-slate-700 shadow-sm backdrop-blur">
                                   {item}
                                 </span>
@@ -565,26 +860,68 @@ export default function App() {
                           </>
                         )}
                       </div>
-                      <div className="p-8">
-                        <p className="text-base leading-8 text-slate-600">{project.description}</p>
-                        <div className="mt-6">
-                          <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-slate-400">Highlights</p>
-                          <ul className="mt-3 space-y-3">
-                            {project.impact.map((item, i) => (
-                              <motion.li
-                                key={item}
-                                initial={{ opacity: 0, x: -12 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: 0.1 + i * 0.08 }}
-                                className="flex gap-3 text-sm leading-7 text-slate-600"
-                              >
-                                <span className="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gradient-to-br from-emerald-400 to-teal-400" />
-                                {item}
-                              </motion.li>
-                            ))}
-                          </ul>
+                      <div className="relative p-8">
+
+                        {/* Default compact view */}
+                        <div className="transition-opacity duration-300 group-hover:opacity-10">
+                          <p className="text-base leading-8 text-slate-600">
+                            {project.description}
+                          </p>
+
+                          <div className="mt-6">
+                            <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-slate-400">
+                              Highlights
+                            </p>
+                            <ul className="mt-3 space-y-2">
+                              {project.built.slice(0, 3).map((item) => (
+                                <li key={item} className="flex gap-3 text-sm text-slate-600">
+                                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                                  {item}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
                         </div>
+
+                        {/* Hover overlay */}
+                        <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-white/95 p-8 backdrop-blur">
+
+                          <div className="space-y-4">
+
+                            <div>
+                              <p className="text-xs font-bold uppercase tracking-[0.25em] text-emerald-600">
+                                Problem
+                              </p>
+                              <p className="mt-1 text-sm text-slate-600">
+                                {project.problem}
+                              </p>
+                            </div>
+
+                            <div>
+                              <p className="text-xs font-bold uppercase tracking-[0.25em] text-emerald-600">
+                                Impact
+                              </p>
+                              <p className="mt-1 text-sm text-slate-600">
+                                {project.impact}
+                              </p>
+                            </div>
+
+                            <div>
+                              <p className="text-xs font-bold uppercase tracking-[0.25em] text-emerald-600">
+                                Relevant For
+                              </p>
+                              <div className="mt-2 flex flex-wrap gap-2">
+                                {project.relevance.map((item) => (
+                                  <span key={item} className="rounded-full bg-slate-900 px-3 py-1 text-xs text-white">
+                                    {item}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        {/* View Button */}
                         <div className="mt-7 flex flex-wrap gap-3">
                           {project.live ? (
                             <a
@@ -666,14 +1003,50 @@ export default function App() {
                           {exp.period}
                         </span>
                       </div>
-                      <ul className="mt-5 space-y-2.5">
-                        {exp.bullets.map((bullet) => (
-                          <li key={bullet} className="flex gap-3 text-sm leading-7 text-slate-500">
-                            <span className="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-teal-400" />
-                            {bullet}
-                          </li>
-                        ))}
-                      </ul>
+                      <div className="mt-5 space-y-4">
+
+                        {/* Description */}
+                        <p className="text-sm leading-7 text-slate-600">
+                          {exp.description}
+                        </p>
+
+                        {/* What I worked on */}
+                        <div>
+                          <p className="text-xs font-bold uppercase tracking-[0.25em] text-slate-400">
+                            What I worked on
+                          </p>
+                          <ul className="mt-2 space-y-2">
+                            {exp.work.map((item) => (
+                              <li key={item} className="flex gap-3 text-sm text-slate-500">
+                                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-teal-400" />
+                                {item}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+
+                        {/* Impact */}
+                        <div>
+                          <p className="text-xs font-bold uppercase tracking-[0.25em] text-slate-400">
+                            Impact
+                          </p>
+                          <p className="mt-1 text-sm text-slate-600">
+                            {exp.impact}
+                          </p>
+                        </div>
+
+                        {/* Relevance */}
+                        <div className="flex flex-wrap gap-2 pt-2">
+                          {exp.relevance.map((tag) => (
+                            <span
+                              key={tag}
+                              className="rounded-full bg-emerald-50 text-emerald-700 px-3 py-1 text-xs font-medium"
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                    </div>
                     </div>
                   </motion.article>
                 ))}
@@ -743,27 +1116,53 @@ export default function App() {
 
           {/* ── SKILLS ── */}
           <section id="skills" className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-            <SectionTitle eyebrow="Skills" title="Technical strengths" description="A mix of analytics, data engineering, full-stack development, and product-minded execution." />
+            <SectionTitle 
+              eyebrow="Skills" 
+              title="Technical strengths" 
+              description="A mix of analytics, data engineering, AI tools, and product-minded execution." 
+            />
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="rounded-[28px] border border-slate-200 bg-white p-8 shadow-sm"
             >
-              <div className="flex flex-wrap gap-3">
-                {skills.map((skill, i) => (
-                  <motion.span
-                    key={skill}
-                    initial={{ opacity: 0, scale: 0.75 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
+              <div className="grid gap-6 md:grid-cols-2">
+
+                {skills.map((group, groupIndex) => (
+                  <motion.div
+                    key={group.category}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: i * 0.035 }}
-                    whileHover={{ scale: 1.1, y: -2 }}
-                    className="cursor-default rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition-all hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700 hover:shadow-md"
+                    transition={{ delay: groupIndex * 0.1 }}
+                    className="rounded-2xl border border-slate-100 bg-slate-50 p-5"
                   >
-                    {skill}
-                  </motion.span>
+                    {/* Category Title */}
+                    <h3 className="syne text-lg font-bold text-slate-900">
+                      {group.category}
+                    </h3>
+
+                    {/* Skill Tags */}
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {group.items.map((item, i) => (
+                        <motion.span
+                          key={item}
+                          initial={{ opacity: 0, scale: 0.8 }}
+                          whileInView={{ opacity: 1, scale: 1 }}
+                          viewport={{ once: true }}
+                          transition={{ delay: i * 0.03 }}
+                          whileHover={{ scale: 1.08, y: -2 }}
+                          className="cursor-default rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700 shadow-sm transition-all hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700"
+                        >
+                          {item}
+                        </motion.span>
+                      ))}
+                    </div>
+                  </motion.div>
                 ))}
+
               </div>
             </motion.div>
           </section>
@@ -786,11 +1185,11 @@ export default function App() {
                 <div className="mt-4 grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
                   <div>
                     <h2 className="syne text-3xl font-bold tracking-tight md:text-4xl">
-                      Open to opportunities in data science, software development, and QA-focused roles.
+                      Open to opportunities in data science, software development, and product-focused roles.
                     </h2>
                     <p className="mt-4 text-base leading-8 text-slate-400">
                       Especially excited about roles where I can build analytical systems, improve data quality,
-                      create dashboards, and support better decision-making across teams.
+                      develope dashboard reports, and support better decision-making across teams.
                     </p>
                   </div>
                   <div className="grid gap-3 text-sm">
